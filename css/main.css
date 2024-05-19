@@ -1,0 +1,301 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open sans', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+/* Konten Header-Navigation */
+header.nav-bar {
+    width: 100%;
+    padding-block: 1rem;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+
+    position: sticky;
+    top: 0;
+    background-color: aliceblue;
+
+}
+header.nav-bar .foto-nasta-nav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+header.nav-bar .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+header.nav-bar .nav-list li {
+    list-style-type: none;
+}
+header.nav-bar .nav-list a {
+    padding: 0.1rem 2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    transition: all 0.2 ease-in-out;
+
+}
+header.nav-bar .nav-list li:hover a{
+    background-color: #2d3e52;
+    color: white;
+}
+/* Konten Main */
+main {
+    flex: 1;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+/* Konten Landing */
+main .content .landing {
+    flex: 1;
+    
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px;
+}
+main .content .overview {
+    flex: 1;
+}
+main .content .overview .title {
+    margin-block: 1rem;
+    font-size: 3rem
+}
+main .content .overview p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+main .content .overview button {
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+    background-color: #2d3e52;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+main .content .overview button:hover {
+  border: 3px solid #2d3e52;
+  background-color: transparent;
+  color: #2d3e50;
+}
+main .content .foto-nasta-main {
+    flex: 1;
+    display: flex;
+    order: -1;
+}
+main .content .foto-nasta-main img {
+    width: 300px;
+    min-width: 250px;
+    margin: auto;
+}
+/* Konten Article */
+/* Konten Article Profile */
+
+main .profil {
+    display: flex;
+}
+main .content .profil .profil-penjelasan {
+    flex: 5;
+    padding: 20px;
+}
+main .content .profil .profil-side {
+    flex: 2;
+    font-size: 1rem;
+    padding: 20px;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+main .content .profil .profil-side img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+/* Konten Pengalaman */
+main .content .pengalaman {
+    display: flex;
+}
+main .content .pengalaman .pengalaman-penjelasan {
+    flex: 5;
+    padding: 20px;
+}
+main .content .pengalaman .pengalaman-foto {
+    flex: 2;
+    padding: 20px;
+    flex-direction: column;
+}
+.pengalaman-foto img {
+    width: 300px;
+    border-radius: 9px;
+}
+
+/* Konten Organisasi */
+.organisasi {
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+}
+.foto-organisasi img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 9px;
+}
+.organisasi-1 {
+    display: flex;
+    flex-flow: row;
+    padding: 20px;
+}
+.penjelasan-organisasi {
+    padding: 20px;
+}
+
+/* Konten Prestasi */
+.prestasi {
+    padding: 20px;
+}
+.list-prestasi {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    justify-content: left;
+    margin-inline: auto;
+    color: white;
+    text-align: center;
+}
+.prestasi-1 {
+    display: flex;
+    flex-flow: column;
+    flex: 0 1 300px;
+
+    background-color: #2d3e52;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    border: 1px dotted black;
+}
+.prestasi-1 img {
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 9px;
+}
+/* Konten Aside */
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: #2d3e52;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+main aside .social-media li {
+    list-style-type: none;
+}
+main aside .social-media li {
+  list-style-type: none;
+}
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all 0.1s ease-in-out;
+}
+main aside .social-media li a:hover {
+    color: #89b0d9;
+}
+footer {
+    background-color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+
+/* @media screen and (max-width: 1000px){
+    .right-position, .left-position {
+        width: 100%;
+        padding: 0;
+    }
+}
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+    header.nav-bar {
+        flex-direction: column;
+      }
+  }
+   
+  /* Perangkat dengan lebar layar 768px dan di bawahnya */
+  @media screen and (max-width: 768px) {
+    .nav-bar {
+      flex-direction: column;
+    }
+    .nav-bar .nav-list ul {
+      flex-wrap: wrap;
+      column-gap: 0.5rem;
+    }
+    main .content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
